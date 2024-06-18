@@ -13,7 +13,7 @@ const Hero = () => {
             name=""
             id=""
             placeholder="Type the domain you want"
-            className="outline-none w-full pl-4 font-bold text-lg md:text-2xl "
+            className="outline-none w-full pl-4 font-bold text-lg md:text-2xl"
           />
           <button className="bg-[#09757A] hover:bg-[#00838C] py-4 px-5 rounded text-white">
             <IoSearchSharp size={20} />
@@ -22,12 +22,12 @@ const Hero = () => {
         {/* <div></div>  */}
       </div>
       <div>
-        <div className="flex flex-col sm:flex-row items-center justify-between bg-black  rounded-xl mt-12">
-          <div className="p-8 max-w-[400px] text-center lg:text-left">
+        <div className="flex flex-col xs:flex-row items-center justify-between bg-black  overflow-hidden rounded-xl mt-12">
+          <div className="p-8 max-w-[400px] text-center sm:text-left">
             <p className="font-semibold md:mb-6 mb-4 text-white">
               Domain Names
             </p>
-            <p className="font-playfair lg:text-5xl text-3xl font-bold text-white mb-4">
+            <p className="font-playfair lg:text-5xl text-2xl font-bold text-white mb-4">
               Get a .com for ₹ 1.00*/1st yr.
             </p>
             <p className="font-semibold mb-6 lg:text-base text-sm text-white">
@@ -41,6 +41,7 @@ const Hero = () => {
             src={hero}
             width={500}
             height={500}
+            objectFit="contain"
             alt="hero"
             className="md:rounded-r-xl rounded-b-xl "
           />

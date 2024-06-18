@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "580px", // Custom breakpoint at 520px
+      },
       fontFamily: {
         playfair: ["var(--font-playfair)", "serif"],
       },
