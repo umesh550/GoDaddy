@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between h-16 bg-[#111]">
-      <div className="flex md:ml-14 ml-8 gap-4 items-center">
+      <div className="flex md:ml-14 ml-4 gap-4 items-center">
         <Sidebar />
         <Image
           src="/Images/GoDaddy_dark.svg"
@@ -25,7 +25,7 @@ const Navbar = () => {
           alt="logo"
         />
       </div>
-      <div className="flex items-center text-white md:gap-10 gap-7 text-sm font-semibold md:mr-14 mr-8">
+      <div className="flex items-center text-white md:gap-10 gap-7 text-sm font-semibold md:mr-14 mr-4">
         <IoIosHelpCircleOutline className="md:hidden block" size={20} />
         <div className="md:flex items-center cursor-pointer hidden">
           Help
