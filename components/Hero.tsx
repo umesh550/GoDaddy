@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-12 flex flex-col xl:flex-row gap-6 xl:items-stretch xl:justify-between">
-        <div className="flex flex-col sm:flex-row items-center justify-between bg-black rounded-xl overflow-hidden xl:min-w-[800px] 2xl:min-w-[1200px]">
+        <div className="flex flex-col sm:flex-row items-center justify-between bg-black rounded-xl overflow-hidden xl:min-w-[800px] 2xl:max-w-[1200px]">
           <div className="p-8 max-w-full sm:max-w-[400px] text-center sm:text-left">
             <p className="font-semibold text-white md:mb-6 mb-4">
               Domain Names
