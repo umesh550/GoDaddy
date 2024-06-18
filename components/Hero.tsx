@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-12 flex flex-col xl:flex-row gap-6 xl:items-stretch xl:justify-between">
-        <div className="flex flex-col sm:flex-row items-center justify-between bg-black rounded-xl overflow-hidden xl:min-w-[800px] 2xl:max-w-[1200px]">
+        <div className="flex flex-col xs:flex-row items-center justify-between bg-black rounded-xl overflow-hidden xl:min-w-[800px] 2xl:min-w-[1000px]">
           <div className="p-8 max-w-full sm:max-w-[400px] text-center sm:text-left">
             <p className="font-semibold text-white md:mb-6 mb-4">
               Domain Names
@@ -43,7 +43,7 @@ const Hero = () => {
             className="md:rounded-r-xl rounded-b-xl"
           />
         </div>
-        <article className="bg-[#D8EFEF] w-full p-8 rounded-3xl xl:text-center mt-6 xl:mt-0 xl:min-w-[300px]">
+        <article className="bg-[#D8EFEF] w-full p-8 rounded-3xl xl:text-center mt-6 xl:mt-0 xl:min-w-[300px] 2xl:min-w-[400px]">
           <p className="font-semibold lg:mb-5 mb-3">Web Hosting</p>
           <p className="font-bold font-playfair md:text-4xl text-2xl mb-4">
             Secured Hosting from ₹ 199.00/mo.
