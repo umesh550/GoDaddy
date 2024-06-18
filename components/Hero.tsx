@@ -19,10 +19,9 @@ const Hero = () => {
             <IoSearchSharp size={20} />
           </button>
         </div>
-        {/* <div></div>  */}
       </div>
-      <div>
-        <div className="flex flex-col xs:flex-row items-center justify-between bg-black  overflow-hidden rounded-xl mt-12">
+      <div className=" mt-12 xl:flex xl-items-center gap-6 xl:justify-between">
+        <div className="flex flex-col xs:flex-row items-center xl:min-w-[800px] justify-between bg-black  overflow-hidden rounded-xl ">
           <div className="p-8 max-w-[400px] text-center sm:text-left">
             <p className="font-semibold md:mb-6 mb-4 text-white">
               Domain Names
@@ -46,7 +45,7 @@ const Hero = () => {
             className="md:rounded-r-xl rounded-b-xl "
           />
         </div>
-        <article className="bg-[#D8EFEF] w-full p-8  rounded-3xl mt-6">
+        <article className="bg-[#D8EFEF] w-full p-8 xl:min-w-[300px] xl:text-center rounded-3xl mt-6 xl:mt-0">
           <p className="lg:mb-5 mb-3 font-semibold">Web Hosting</p>
           <p className="font-bold font-playfair md:text-4xl text-2xl mb-4">
             Secured Hosting from ₹ 199.00/mo.
