@@ -1,12 +1,19 @@
-interface FooterLink {
-  title: string;
-  links: string[];
-}
+// constants/index.ts
+import microsoft from "@/public/Images/Microsoft.webp";
+import wordpress from "@/public/Images/Wordpress1.jpg";
+import pro from "@/public/Images/Pro.jpg";
 
-interface FAQItem {
+export interface FAQItem {
   question: string;
   ans: string;
   points?: string[];
+}
+
+interface BusinessSolution {
+  title: string;
+  subtitle: string;
+  content: string;
+  button: string;
 }
 
 export const FAQ_ITEMS: FAQItem[] = [
@@ -52,6 +59,11 @@ export const SIDEBAR_LINKS: string[] = [
   "Marketing",
   "Pricing",
 ];
+
+export interface FooterLink {
+  title: string;
+  links: string[];
+}
 
 export const FOOTER_LINKS: FooterLink[] = [
   {
@@ -104,5 +116,32 @@ export const FOOTER_LINKS: FooterLink[] = [
       "Web Security",
       "Business Email",
     ],
+  },
+];
+
+export const BUSSINESS_SOLUTIONS = [
+  {
+    title: "Empower Your Business with Microsoft 365",
+    subtitle: "Microsoft 365",
+    img: microsoft,
+    content:
+      "Microsoft 365 suite provides a robust set of tools and services that can improve productivity, collaboration, and security Productivity tools including Word, Excel, PowerPoint and Outlook.Online meetings, cloud storage, and personalized email.Optimized for mobile devices, smartphones, and tablets.",
+    button: "View Plans",
+  },
+  {
+    title: "Built for speed  and security.",
+    subtitle: "WordPress Hosting",
+    img: wordpress,
+    content:
+      "Get the most from your WordPress site with hosting designed to perform. From automated updates and backups to industry-leading load times, this is WordPress how it was meant to be.",
+    button: "See Plans",
+  },
+  {
+    title: "Free tools for designers and developers.",
+    subtitle: "GoDaddy Pro Program",
+    img: pro,
+    content:
+      "Save hours with bulk WordPress updates and automated backups, manage multiple clients from a single dashboard, get exclusive members-only discounts and more — all for free.",
+    button: "Learn More",
   },
 ];

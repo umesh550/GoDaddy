@@ -47,39 +47,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// <div className="flex items-center justify-between h-16 bg-[#111]">
-// {sidebar ? (
-//   <Sidebar />
-// ) : (
-//   <div className="flex gap-4 ml-14 items-center">
-//     <SlMenu
-//       className="text-white font-bold"
-//       onClick={showSidebar}
-//       size={24}
-//     />
-//     <Image
-//       src="/Images/GoDaddy_dark.svg"
-//       width={130}
-//       height={120}
-//       alt="logo"
-//     />
-//   </div>
-// )}
-
-// <div className="flex items-center text-white gap-10 text-sm font-semibold mr-14">
-//   <div className="flex items-center cursor-pointer">
-//     Help
-//     <span>
-//       <RiArrowDropDownLine size={24} />
-//     </span>
-//   </div>
-//   <div className="flex items-center cursor-pointer">
-//     Sign In
-//     <span>
-//       <RiArrowDropDownLine size={24} />
-//     </span>
-//   </div>
-//   <FiShoppingCart size={18} className="cursor-pointer" />
-// </div>
-// </div>

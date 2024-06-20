@@ -1,6 +1,8 @@
+// components/Accordion.tsx
 "use client";
-import { RiArrowDropDownLine } from "react-icons/ri";
+
 import React, { useState } from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 interface AccordionProps {
   question: string;
@@ -22,21 +24,21 @@ const Accordion: React.FC<AccordionProps> = ({ question, ans, points }) => {
           <p>{question}</p>
           <RiArrowDropDownLine
             size={30}
-            className={` ${isActive ? "rotate-180" : "rotate-0"}`}
+            className={`transform transition-transform duration-300 ${
+              isActive ? "rotate-180" : "rotate-0"
+            }`}
           />
         </div>
         {isActive && (
           <div className="mt-3 font-medium">
             <div>{ans}</div>
-            <div>
-              {points && (
-                <ul className="list-disc list-inside">
-                  {points.map((point, idx) => (
-                    <li key={idx}>{point}</li>
-                  ))}
-                </ul>
-              )}
-            </div>
+            {points && (
+              <ul className="list-disc list-inside mt-2">
+                {points.map((point, idx) => (
+                  <li key={idx}>{point}</li>
+                ))}
+              </ul>
+            )}
           </div>
         )}
       </div>

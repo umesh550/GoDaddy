@@ -1,30 +1,28 @@
+// components/Footer.tsx
 import React from "react";
 import Image from "next/image";
-import { FOOTER_LINKS } from "@/constants/index";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { FOOTER_LINKS, FooterLink } from "@/constants"; // Assuming FooterLink interface is defined
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#111] text-white py-8 ">
+    <footer className="bg-[#111] text-white py-8">
       <section className="lg:flex justify-between block lg:px-16 px-12">
-        {FOOTER_LINKS.map((footer_links, index) => {
-          return (
-            <div className="mb-5">
-              <h2 className="font-medium mb-3">{footer_links.title}</h2>
-              <ul>
-                {footer_links.links.map((link, linkIndex) => (
-                  <li
-                    key={linkIndex}
-                    className="text-[#BAC0C3] max-w-[148px] text-xs py-[10px] hover:underline cursor-pointer"
-                  >
-                    {link}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          );
-        })}
+        {FOOTER_LINKS.map((footerLink: FooterLink, index: number) => (
+          <div key={index} className="mb-5">
+            <h2 className="font-medium mb-3">{footerLink.title}</h2>
+            <ul>
+              {footerLink.links.map((link, linkIndex) => (
+                <li
+                  key={linkIndex}
+                  className="text-[#BAC0C3] max-w-[148px] text-xs py-[10px] hover:underline cursor-pointer"
+                >
+                  {link}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </section>
       <section className="flex items-center justify-between my-3 lg:px-16 px-12">
         <Image
