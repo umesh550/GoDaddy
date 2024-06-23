@@ -8,7 +8,7 @@ const BussinessSolutions: React.FC = () => {
       {BUSSINESS_SOLUTIONS.map((items, index) => (
         <div
           key={index}
-          className={`flex flex-col xl:flex-row justify-between 2xl:max-w-[1300px] 2xl:mx-auto py-12 items-center ${
+          className={`flex flex-col xl:flex-row justify-between 2xl:max-w-[1400px] 2xl:mx-auto py-12 items-center ${
             index % 2 ? "xl:flex-row-reverse" : ""
           }`}
         >

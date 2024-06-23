@@ -2,6 +2,7 @@
 import microsoft from "@/public/Images/Microsoft.webp";
 import wordpress from "@/public/Images/Wordpress1.jpg";
 import pro from "@/public/Images/Pro.jpg";
+import { userAgent } from "next/server";
 
 export interface FAQItem {
   question: string;
@@ -143,5 +144,68 @@ export const BUSSINESS_SOLUTIONS = [
     content:
       "Save hours with bulk WordPress updates and automated backups, manage multiple clients from a single dashboard, get exclusive members-only discounts and more — all for free.",
     button: "Learn More",
+  },
+];
+
+interface Feedback {
+  user: string;
+  review: string;
+  rating: number;
+}
+
+export const FEEDBACK: Feedback[] = [
+  {
+    user: "Vishal Hanmattekar",
+    review:
+      "Excellent product and the service is top notch. Very happy to be associated with GoDaddy",
+    rating: 5,
+  },
+  {
+    user: "Jamal Ashraf",
+    review:
+      "I have been using GodDaddy hosting service more than 10 years. It's very easy to use and the customer service is excellent.",
+    rating: 5,
+  },
+  {
+    user: "Prashanth Kambhayata",
+    review:
+      "Great product and service customer support assistance from GoDaddy support team",
+    rating: 4,
+  },
+  {
+    user: "Umesh Tiruvalluru",
+    review:
+      "GoDaddy customer support is 100% reliable for all website related support. The support staff are reliable, quick, knowledgeable and always ready to help",
+    rating: 5,
+  },
+  {
+    user: "Kapu Craz Hub",
+    review:
+      "Very nice service. Customercare people are so polite. Good offers. Clarified each and everypoint, Discount also. Finally happy with the GoDaddy service.",
+    rating: 5,
+  },
+  {
+    user: "Kannan Rajaram",
+    review:
+      "Easiest and smooth experience for website and domain registration/hosting. The customer service is amazing in troubleshooting and resolving issues: always going all the way to ensure we get the best.",
+    rating: 5,
+  },
+  {
+    user: "Muskan shaik",
+    review:
+      "The customer support at GoDaddy is extremely polite and helpful. I get my problems sorted out in quick time Thanks!",
+    rating: 5,
+  },
+  {
+    user: "Vishal Hanmattekar",
+    review:
+      "Excellent product and the service is top notch. Very happy to be associated with GoDaddy",
+    rating: 5,
+  },
+  {
+    user: "Umesh Tiruvalluru",
+    review:
+      "GoDaddy customer support is 100% reliable for all website related support. The support staff are reliable, quick, knowledgeable and always ready to help.",
+    rating: 5,
   },
 ];
