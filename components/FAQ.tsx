@@ -1,7 +1,6 @@
-// components/FAQ.tsx
 "use client";
 import React from "react";
-import { FAQItem, FAQ_ITEMS } from "@/constants"; // Assuming FAQItem interface is defined
+import { FAQItem, FAQ_ITEMS } from "@/constants";
 import Accordion from "./Accordion";
 
 const FAQ: React.FC = () => {

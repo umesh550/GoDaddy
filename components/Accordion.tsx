@@ -31,7 +31,7 @@ const Accordion: React.FC<AccordionProps> = ({ question, ans, points }) => {
           />
         </div>
         {isActive && (
-          <div className="mt-3 font-medium text-sm sm:text-base md:text-base xl:text-lg 2xl:text-xl leading-9">
+          <div className="mt-3 font-medium text-sm sm:text-base md:text-base xl:text-lg 2xl:text-xl xl:leading-9">
             <div>{ans}</div>
             {points && (
               <ul className="list-disc list-inside mt-2">
