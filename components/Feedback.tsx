@@ -1,12 +1,14 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Card";
 import { FEEDBACK } from "@/constants";
 import { IoMdStar } from "react-icons/io";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 
-const Feedback = () => {
-  const [currIndex, setCurrIndex] = React.useState(0);
+interface FeedbackProps {}
+
+const Feedback: React.FC<FeedbackProps> = () => {
+  const [currIndex, setCurrIndex] = useState<number>(0);
 
   const handlePrev = () => {
     setCurrIndex((prevIndex) => (prevIndex === 0 ? 0 : prevIndex - 1));
@@ -40,24 +42,22 @@ const Feedback = () => {
           ))}
         </div>
         <div className="flex justify-between items-start mt-8">
-          <div className="">
+          <div>
             <p className="flex text-2xl items-center space-x-3 font-bold">
-              <span>
-                <IoMdStar size={28} className="text-green-700" />
-              </span>
-              Trustpilot
+              <IoMdStar size={28} className="text-green-700" />
+              <span>Trustpilot</span>
             </p>
             <div className="flex items-center pl-1 gap-1 my-2">
               {Array.from({ length: 4 }, (_, i) => (
                 <IoMdStar
                   key={i}
                   size={35}
-                  className={`text-white bg-green-600`}
+                  className="text-white bg-green-600"
                 />
               ))}
               <IoMdStar
                 size={35}
-                className={`text-white bg-gradient-to-r from-green-600 to-gray-400`}
+                className="text-white bg-gradient-to-r from-green-600 to-gray-400"
               />
             </div>
             <p className="font-semibold">

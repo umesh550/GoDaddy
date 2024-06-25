@@ -1,14 +1,14 @@
 import React from "react";
+import Image from "next/image";
 import domains from "@/public/Images/domains.png";
 import domains2 from "@/public/Images/domains2.png";
 import domains3 from "@/public/Images/domains3.png";
-import Image from "next/image";
 
-const Domains = () => {
+const Domains: React.FC = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div className="md:col-span-1 lg:row-span-2 p-10 bg-[#D9EEEC] rounded-3xl">
-        <Image src={domains} objectFit="cover" alt="domains-1" />
+        <Image src={domains} alt="domains-1" className="object-cover" />
         <div>
           <h2 className="font-semibold text-2xl">Domains</h2>
           <p className="font-medium mt-3 max-w-[300px] hidden md:block">
@@ -32,9 +32,8 @@ const Domains = () => {
         </div>
         <Image
           src={domains2}
-          objectFit="cover"
           alt="domains-2"
-          className="hidden md:block"
+          className="object-cover hidden md:block"
         />
       </div>
       <div className="flex items-center justify-between p-6 bg-[#F8E9E0] rounded-3xl">
@@ -49,9 +48,8 @@ const Domains = () => {
         </div>
         <Image
           src={domains3}
-          objectFit="cover"
           alt="domains-3"
-          className="hidden md:block"
+          className="object-cover hidden md:block"
         />
       </div>
     </div>

@@ -2,9 +2,9 @@ import Image from "next/image";
 import guide from "@/public/Images/Guide.png";
 import React from "react";
 
-const Guide = () => {
+const Guide: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row lg:mx-auto my-12 ">
+    <div className="flex flex-col lg:flex-row lg:mx-auto my-12">
       <Image
         src={guide}
         width={500}
@@ -14,7 +14,7 @@ const Guide = () => {
       />
       <div className="bg-white lg:bg-[#E0E9F6] mx-auto lg:w-full p-8">
         <p className="font-bold mb-5 lg:mb-12">
-          GoDaddy <span className="text-[#9A90C6] font-medium ">guides</span>
+          GoDaddy <span className="text-[#9A90C6] font-medium">guides</span>
         </p>
         <h1 className="text-3xl md:text-5xl font-playfair font-bold">
           Why go with GoDaddy?

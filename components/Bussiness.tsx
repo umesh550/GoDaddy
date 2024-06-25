@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
+import { useState } from "react";
 import Domains from "./Domains";
 import Recommended from "./Recommended";
 
-const Business = () => {
-  const [isActive, setIsActive] = React.useState(true);
+const Business: React.FC = () => {
+  const [isActive, setIsActive] = useState(true);
 
   const handleDomainsClick = () => {
     setIsActive(true);
@@ -37,9 +37,7 @@ const Business = () => {
           Recommended
         </button>
       </div>
-
-      {isActive && <Domains />}
-      {!isActive && <Recommended />}
+      {isActive ? <Domains /> : <Recommended />}
     </section>
   );
 };

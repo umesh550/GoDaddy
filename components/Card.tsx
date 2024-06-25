@@ -7,7 +7,7 @@ interface CardInfo {
   rating: number;
 }
 
-const Card = ({ user, review, rating }: CardInfo) => {
+const Card: React.FC<CardInfo> = ({ user, review, rating }) => {
   return (
     <div className="max-w-sm p-4 mr-6 mt-5 border border-gray-200 rounded-lg shadow-lg bg-white min-h-60 min-w-[320px]">
       <p className="text-lg font-bold text-gray-800 mb-2">{user}</p>
